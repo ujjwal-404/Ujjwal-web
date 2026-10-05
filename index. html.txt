@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Cafe</title>
+</head>
+<body>
+
+    <h1>Food Cafe</h1>
+
+    <hr>
+
+    <h2>Welcome</h2>
+    <p>Welcome to Food Cafe. We provide fresh and delicious food for our customers.</p>
+
+    <hr>
+
+    <h2>Menu</h2>
+
+    <h3>Burger - ₹120</h3>
+    <p>Fresh burger with cheese and vegetables.</p>
+
+    <h3>Pizza - ₹250</h3>
+    <p>Cheesy pizza with fresh toppings.</p>
+
+    <h3>Coffee - ₹80</h3>
+    <p>Hot coffee prepared with premium beans.</p>
+
+    <hr>
+
+    <h2>About Us</h2>
+    <p>Food Cafe is a place where customers can enjoy tasty food in a comfortable environment.</p>
+
+    <hr>
+
+    <h2>Contact Us</h2>
+    <p>Phone: 9876543210</p>
+    <p>Email: foodcafe@gmail.com</p>
+
+</body>
+</html>
