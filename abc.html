@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Cafe</title>
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f8f8;
+}
+
+/* NAVBAR */
+
+nav{
+background:#222;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:#ff9800;
+font-size:28px;
+font-weight:bold;
+}
+
+.hero{
+    padding:60px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#ff9800;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:60px;
+flex-wrap:wrap;
+background:#fff3e0;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.btn{
+background:#ff9800;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+text-decoration:none;
+}
+
+.hero img{
+width:400px;
+border-radius:20px;
+margin-left:30px;
+}
+
+.gallery{
+    padding:60px;
+}
+
+.gallery img{
+    width:350px;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+
+/* SECTION */
+
+.section-title{
+text-align:center;
+margin:40px 0;
+font-size:40px;
+}
+
+/* MENU */
+
+.menu{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding-bottom:40px;
+}
+
+.card{
+width:250px;
+background:white;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+padding:15px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.price{
+color:#ff6600;
+font-weight:bold;
+}
+
+/* FORM */
+
+.form-section{
+padding:40px;
+background:white;
+margin:30px auto;
+width:80%;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+form{
+max-width:600px;
+margin:auto;
+}
+
+label{
+font-weight:bold;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+width:auto;
+}
+
+.submit-btn{
+background:#ff9800;
+color:white;
+border:none;
+padding:12px 20px;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding-bottom:40px;
+}
+
+.gallery img{
+width:300px;
+height:200px;
+object-fit:cover;
+border-radius:15px;
+}
+
+/* ABOUT */
+
+.about{
+text-align:center;
+padding:40px;
+line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">FOOD CAFE</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#booking">Booking</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<form>
+
+<input type="search" placeholder="Search Food">
+
+</form>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+<h1>Welcome To Food Cafe</h1>
+
+<p>
+Enjoy delicious meals, premium coffee and
+a memorable dining experience.
+</p>
+
+<button type="button" onclick="location.href='#menu'">
+View Menu
+</button>
+<input type="submit" class="order-btn" value="Place Order">
+<button type="reset">Reset Form</button>
+
+<a href="#menu" class="btn">Explore Menu</a>
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8xKC7AlXyPOE8EL82p6DXP3qCNBq-JqQBG_bhbDkXTxX2GgL4t7nxAGN&s=10?W=800">
+
+</section>
+
+<h2 class="section-title" id="menu">Our Menu</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="https://static01.nyt.com/images/2025/07/25/multimedia/kla-diner-style-burger-fkmj/kla-diner-style-burger-fkmj-videoSixteenByNineJumbo1600.jpg" alt="Burger" width="200">
+
+<h3>Burger</h3>
+<p>Cheesy Veg Burger</p>
+<p class="price">₹120</p>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIibPbOeDQQscm9g-fDNdCvROokQJukg8nYQ&s" alt="Pizza" width="200">
+<h3>Pizza</h3>
+<p>Italian Pizza</p>
+<p class="price">₹250</p>
+</div>
+
+<div class="card">
+<img src=https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg?quality=90&resize=500,454
+<h3>Coffee</h3>
+<p>Premium Coffee</p>
+<p class="price">₹80</p>
+</div>
+
+</div>
+
+<section class="form-section" id="booking">
+
+<h2 class="section-title">Book A Table</h2>
+
+<form onsubmit="bookTable(event)">
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter Name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter Email">
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter Phone">
+
+<label>Date</label>
+<input type="date">
+
+<label>Time</label>
+<input type="time">
+
+<label>Guests</label>
+<input type="number" min="1" max="20">
+
+<input type="hidden" value="FoodCafe2026">
+
+<input type="submit" value="Book Now" class="submit-btn">
+
+</form>
+
+</section>
+
+<section class="form-section">
+
+<h2 class="section-title">Place Order</h2>
+
+<form>
+
+<label>Select Food</label>
+
+<select>
+<option>Burger</option>
+<option>Pizza</option>
+<option>Coffee</option>
+<option>French Fries</option>
+</select>
+
+<label>Delivery Address</label>
+<textarea rows="4"></textarea>
+
+<label>Payment Method</label><br>
+
+<input type="radio" name="pay"> Cash
+<input type="radio" name="pay"> UPI
+<input type="radio" name="pay"> Card
+
+<br><br>
+
+<label>Extras</label><br>
+
+<input type="checkbox"> Extra Cheese
+<input type="checkbox"> Extra Sauce
+<input type="checkbox"> Fast Delivery
+
+<br><br>
+
+<label>Upload Screenshot</label>
+<input type="file">
+
+<input type="submit" value="Place Order" class="submit-btn">
+
+<input type="reset" value="Reset" class="submit-btn">
+
+</form>
+
+<section class="form-section">
+
+<h2>Customer Feedback</h2>
+
+<form>
+
+<label>Name</label>
+<input type="text" placeholder="Your Name">
+
+<label>Visit Date</label>
+<input type="date">
+
+<label>Rate Our Service</label>
+<input type="range" min="1" max="10">
+
+<label>Comments</label>
+<textarea rows="4"></textarea>
+
+<input type="submit" value="Send Feedback" class="submit-btn">
+
+</form>
+
+</section>
+
+<section class="form-section">
+
+<h2>Birthday Club</h2>
+
+<form>
+
+<label>Name</label>
+<input type="text">
+
+<label>Email</label>
+<input type="email">
+
+<label>Birth Month</label>
+<input type="month">
+
+<label>Favorite Theme Color</label>
+<input type="color">
+
+<input type="submit" value="Join Club" class="submit-btn">
+
+</form>
+
+</section>
+
+<h2 class="section-title" id="gallery">Food Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600">
+
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600">
+
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600">
+
+<img src="https://www.cafe938.ch/wp-content/uploads/2024/08/Cafe938-RecettesDessertsEte-TiramisuGrand-scaled.jpg">
+<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfRpR1qbmexdc3pDsayifCl-gdD4cyWRgmeL5tIwsTqoEsU40vspMx2P5dE6yq9GXhWNWWJ7HJDiKpmVp5n1M63xBfIsM-CPf4OQBJLcRop_LzRn0_mG8P8cwlDh7P2cA5xeGHBTA?key=eQ55lZyA1nHXPTX48QYysg" width="100">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfp6nYTgIopvgEhBk_qcNQmyqbQ0Ov164j2hqr2LBNzgPkcuV8n1WGxOQ&s=10" width="100">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRu8Aa4-HsoZNfFGD5B26IVeJYt7wjCovD5NU9hIdKLjoS5f8X_--1L_8p&s=10">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmfzkoy9zmi0pTM9HFf9wTlaccXJUR0-3OnDOJh_qDc1wGlD5gXMq4wTho&s=10"
+<img src="https://en-chatelaine.mblycdn.com/ench/resized/2015/06/w767/Angel-food-cake.jpg">
+</div>
+
+<section class="about">
+<p>
+Welcome to <strong>Food Cafe</strong>,
+your favorite destination for
+<em>fresh food</em> and
+<mark>special offers</mark>.
+</p>
+
+<p>
+Our <abbr title="Food and Beverage">F&B</abbr>
+team serves quality meals every day.
+</p>
+
+<p>
+Today's Special:
+<del>₹299</del>
+<ins>₹199</ins>
+</p>
+
+<p>
+Open from
+<time>10:00 AM</time>
+to
+<time>11:00 PM</time>
+</p>
+
+<h2>Subscribe For Offers</h2>
+
+<form>
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email" required>
+
+<input type="submit" value="Subscribe" class="submit-btn">
+
+</form>
+
+</section>
+
+<p>
+Food Cafe has been serving fresh food and beverages
+since 2020. We focus on quality ingredients,
+excellent customer service and a comfortable dining experience.
+</p>
+
+</section>
+
+<footer class="contact">
+
+<h3>Food Cafe</h3>
+
+<p>Fresh Food • Great Taste • Happy Moments</p>
+
+<br>
+<p>📍 Nashik, Maharashtra</p>
+
+<p>📞 9876543210</p>
+
+<p>✉ foodcafe@gmail.com</p>
+
+<p>© 2026 Food Cafe</p>
+<a href="https://www.zomato.com/" target="blank">zomato</a>
+<a href="https://www.swiggy.com/" target="blank">swiggy</a>
+<a href="https://www.dominos.co.in/" target="blank">dominos</a>
+<i class="fa-brands fa-square-instagram"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-telegram"></i>
+</footer>
